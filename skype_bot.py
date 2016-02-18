@@ -3,7 +3,6 @@ from urllib import urlretrieve,unquote_plus
 from urllib2 import Request,urlopen
 from time import time, ctime, sleep
 #from chatterbotapi import ChatterBotFactory, ChatterBotType
-from BeautifulSoup import BeautifulSoup
 currdir = os.getcwd()
 cfgfile = 'bot.cfg' #the file where we store defpochs/conqeusts and other info
 datadir = 'data_files' # directory where we store world data files.
@@ -17,71 +16,7 @@ timeout = 10
 socket.setdefaulttimeout(timeout)
 
 __URLS__ = {
-	'alpha':'http://en1.grepolis.com',
-	'beta':'http://en2.grepolis.com',
-	'gamma':'http://en3.grepolis.com',
-	'delta':'http://en4.grepolis.com',
-	'epsilon':'http://en5.grepolis.com',
-	'zeta':'http://en6.grepolis.com',
-	'eta':'http://en7.grepolis.com',
-	'theta':'http://en8.grepolis.com',
-	'kappa':'http://en10.grepolis.com',
-	'mu':'http://en12.grepolis.com',
-	'nu':'http://en13.grepolis.com',
-	'xi':'http://en14.grepolis.com',
-	'omicron':'http://en15.grepolis.com',
-	'pi':'http://en16.grepolis.com',
-	'rho':'http://en17.grepolis.com',
-	'sigma':'http://en18.grepolis.com',
-	'tau':'http://en19.grepolis.com',
-	'upsilon':'http://en20.grepolis.com',
-	'phi':'http://en21.grepolis.com',
-	'chi':'http://en22.grepolis.com',
-	'omega':'http://en24.grepolis.com',
-	'athens':'http://en25.grepolis.com',
-	'byzantium':'http://en26.grepolis.com',
-	'delphi':'http://en28.grepolis.com',
-	'ephesus':'http://en29.grepolis.com',
-	'gythium':'http://en30.grepolis.com',
-	'heraklion':'http://en31.grepolis.com',
-	'achilles':'http://en32.grepolis.com',
-	'ithaca':'http://en33.grepolis.com',
-	'juktas':'http://en34.grepolis.com',
-	'knossos':'http://en35.grepolis.com',
-	'lamia':'http://en36.grepolis.com',
-	'marathon':'http://en37.grepolis.com',
-	'naxos':'http://en38.grepolis.com',
-	'olympia':'http://en39.grepolis.com',
-	'pella':'http://en40.grepolis.com',
-	'bellerophon':'http://en41.grepolis.com',
-	'rhethymnos':'http://en42.grepolis.com',
-	'sparta':'http://en43.grepolis.com',
-	'troy':'http://en44.grepolis.com',
-	'hyperborea':'http://en45.grepolis.com',
-	'Zakros':'http://en46.grepolis.com',
-	'actium':'http://en47.grepolis.com',
-	'baris':'http://en48.grepolis.com',
-	'calydon':'http://en49.grepolis.com',
-	'delos':'http://en50.grepolis.com',
-	'edessa':'http://en51.grepolis.com',
-	'farsala':'http://en52.grepolis.com',
-	'gela':'http://en53.grepolis.com',
-	'helorus':'http://en54.grepolis.com',
-	'idalium':'http://en55.grepolis.com',
-	'kos':'http://en56.grepolis.com',
-	'lindos':'http://en57.grepolis.com',
-	'myonia':'http://en58.grepolis.com',
-	'nicaea':'http://en59.grepolis.com',
-	'oropus':'http://en60.grepolis.com',
-	'paros':'http://en61.grepolis.com',
-	'rizinia':'http://en62.grepolis.com',
-	'sestos':'http://en63.grepolis.com',
-	'thebes':'http://en64.grepolis.com',
-	'zacynthus':'http://en65.grepolis.com',
-	'apollonia ':'http://en66.grepolis.com',
-	'byllis':'http://en67.grepolis.com',
-	'cythera':'http://en68.grepolis.com',
-	'dyme':'http://en69.grepolis.com'
+	'carphi':'http://en86.grepolis.com'
 	
 }
 defaultconfig = {"territorylimit": {}, "rangelimit": {}, "monitor": {}, "botadmins": ["soconius"], "last_scrape":{}, "world_scrape":{}, "feedback":{}}
